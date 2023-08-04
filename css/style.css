@@ -365,6 +365,12 @@ span {
     cursor: pointer;
 }
 
+.social-media{
+    display: inline-flex;
+    margin-top: 2rem;
+    background: red;
+}
+
 .footer {
     display: flex;
     justify-content: space-around;
