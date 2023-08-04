@@ -365,6 +365,12 @@ span {
     cursor: pointer;
 }
 
+.whatsapp{
+    display: flex;
+    margin-left: 50%;
+    position: absolute;
+}
+
 .footer {
     display: flex;
     justify-content: space-around;
