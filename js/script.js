@@ -101,9 +101,7 @@ srleft.reveal('.srup h1, .about img', {
   }
 
 
-
-
-
+ 
   
   
 
