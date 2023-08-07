@@ -160,6 +160,7 @@ span {
    letter-spacing: .1rem;
    font-weight: 600;
    transition: .5s ease;
+   margin-top: 10px;
 }
 
 .btn:hover {
@@ -365,7 +366,7 @@ span {
     cursor: pointer;
 }
 
-.social-media .whatsapp{
+.social-media{
     display: inline-flex;
     margin-top: 2rem;
 }
