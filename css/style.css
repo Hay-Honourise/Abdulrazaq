@@ -128,6 +128,10 @@ span {
     font-size: 1.6rem;
 }
 
+/* .social-media {
+    margin-top: 30px;
+} */
+
 .social-media a {
     display: inline-flex;
     justify-content: center;
@@ -420,7 +424,6 @@ span {
         padding: 10rem 3% 2rem;
     }
 
-
     .services {
         padding-bottom: 7rem;
     }
@@ -441,6 +444,7 @@ span {
 @media (max-width: 768px) {
     #menu-icon {
         display: block;
+        font-size: xx-large;
     }
 
     .navbar {
@@ -476,6 +480,16 @@ span {
     .home.content h1 {
         font-size: 5rem;
     }
+    .home-content .btn {
+        margin-left: 80px;
+
+        justify-content: center;
+    }
+
+    .home-content .social-media {
+        margin-left: 30px;
+    }
+
 
     .home-img img {
         width: 30vw;
