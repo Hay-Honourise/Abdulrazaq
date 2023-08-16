@@ -89,7 +89,7 @@ srleft.reveal('.srup h1, .about img', {
 
   /*==================== typed js ====================*/
   const typed = new Typed('.multiple-text', {
-    strings: ['Frontend Developer', 'YouTuber', 'Blogger', 'Graphic Designer', 'App Development'],
+    strings: ['Frontend Developer', 'YouTuber', 'Blogger', 'Graphic Designer', 'App Developer'],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 1000,
@@ -101,7 +101,22 @@ srleft.reveal('.srup h1, .about img', {
   }
 
 
- 
+ /*==================== Form Validation ====================*/
+
+
+  document.getElementById("contactForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent the form from submitting in the default way
+
+    // Perform your custom validation here if needed
+    // For example, check for valid email format, etc.
+
+    // Send the email using the user's email client
+    this.submit();
+
+    // Reset the form after submission
+    this.reset();
+  });
+
   
   
 
