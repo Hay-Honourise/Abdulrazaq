@@ -200,7 +200,7 @@
         </div>
             <textarea name="" id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
             <!-- <input type="submit" value="Send Message" class="btn sr" title="click to send Mail"> -->
-            <button type="submit"> Submit</button>
+            <button type="submit" class="btn sr"> Submit</button>
 
             <div class="social-media">
                 <div class="whatsapp">
@@ -234,13 +234,17 @@
                 Email.send({
                     Host : "smtp.gmail.com",
                     Username : "hayhonourise2016@gmail.com",
-                    Password : "AF753F46B1BF39A00F465BCAB2EA5BD8D021",
-                    To : 'hayhonourise2016@gmail.com.com',
+                    Password : "Honourise1997",
+                    To : 'hayhonourise2016@gmail.com',
                     From : document.getElementById("email").value,
                     Subject : "New Contact Form Enquiry",
-                    Body : "And this is the body"
+                    Body : "Name: " + document.getElementById("name").value
+                    + "<br> Email: " + document.getElementById("email").value
+                    + "<br> phone No: " + document.getElementById("phone").value
+                    + "<br> Message: " + document.getElementById("message").value
+
                 }).then(
-                message => alert(message)
+                message => alert("Message sent successfully")
                 );
             }
         </script>
