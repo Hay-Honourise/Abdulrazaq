@@ -188,17 +188,20 @@
        <!-- Contact section -->
        <section class="contact srbottom" id="contact">
         <h2 class="heading srup">Contact <span>Me!</span></h2>
-        <form action="https://formsubmit.co/hayhonourise2016@email.com" method="POST">
+
+        <form onsubmit="sendEmail(); reset(); return false;">
         <div class="input-box">
-            <input type="text" placeholder="Full name">
-            <input type="email" placeholder="Email Address">
+            <input type="text" placeholder="Full name" id="name">
+            <input type="email" placeholder="Email Address" id="email">
         </div>
         <div class="input-box">
-            <input type="number" placeholder="Mobile Number">
-            <input type="text" placeholder="Email Subject">
+            <input type="number" placeholder="Mobile Number" id="phone">
+            <input type="text" placeholder="Email Subject" id="subject">
         </div>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-            <input type="submit" value="Send Message" class="btn sr" title="click to send Mail">
+            <textarea name="" id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <!-- <input type="submit" value="Send Message" class="btn sr" title="click to send Mail"> -->
+            <button type="submit"> Submit</button>
+
             <div class="social-media">
                 <div class="whatsapp">
                     <a href="https://api.whatsapp.com/send?phone=2349035631361" target="_blank" data-text="Hello, I visited your portfolio website and would like to connect." title="Click to Message on WhatsApp"><i class='bx bxl-whatsapp'></i></a>                
@@ -225,6 +228,22 @@
         <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
         <!-- custom js -->
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script>
+            function sendEmail(){
+                Email.send({
+                    Host : "smtp.gmail.com",
+                    Username : "hayhonourise2016@gmail.com",
+                    Password : "AF753F46B1BF39A00F465BCAB2EA5BD8D021",
+                    To : 'hayhonourise2016@gmail.com.com',
+                    From : document.getElementById("email").value,
+                    Subject : "New Contact Form Enquiry",
+                    Body : "And this is the body"
+                }).then(
+                message => alert(message)
+                );
+            }
+        </script>
         <script src="js/script.js"></script>
     </body>
 </html>
