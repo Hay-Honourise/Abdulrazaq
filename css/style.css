@@ -340,13 +340,15 @@ span {
     margin-bottom: 3rem;
 }
 
-.contact form .input-box {
+.contact form .input-box,
+button {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
 .contact form .input-box input,
+button,
 .contact form textarea {
     width: 100%;
     padding: 1.5rem;
@@ -357,7 +359,8 @@ span {
     margin: .7rem 0;
 }
 
-.contact form .input-box input{
+.contact form .input-box input,
+button{
     width: 49%;
 }
 
